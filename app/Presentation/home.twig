@@ -1,0 +1,20 @@
+{% extends "base.twig" %}
+    {% block title %}Home{% endblock %}
+    {% block content %}
+    <div>
+        <h5>Jouw testen:</h5>
+        {% for key,assignment in assignments %}
+        <a href="index.php?page=test&id=1" style="display:block;width:320px;">
+        <div class="card-item mb-2 mt-2">
+                <div class="card-vertical-border"></div>
+                <span>{{ assignment.title }}</span>
+            </div>
+        </a>
+        {% endfor %}
+        <div class="card-item mb-2 mt-2">
+            <div class="card-vertical-border"></div>
+            <span>test 2</span>
+        </div>
+    </div>
+    {% endblock %}
+

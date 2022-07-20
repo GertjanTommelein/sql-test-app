@@ -1,0 +1,16 @@
+{
+    "name": "gertjan/sql-test-application",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gertjan"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.4"
+    }
+}
